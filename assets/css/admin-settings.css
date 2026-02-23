@@ -1,0 +1,81 @@
+/**
+ * Admin Settings Layout & Preview
+ */
+.mcta-settings-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.mcta-settings-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mcta-settings-preview {
+    flex: 0 0 350px;
+}
+
+.mcta-preview-container {
+    position: sticky;
+    top: 50px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.mcta-preview-container h2 {
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.mcta-preview-window {
+    background: #f0f0f1;
+    border: 1px solid #ddd;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* Re-use frontend-like styles for the preview button */
+.mcta-preview-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    font-size: 16px;
+    pointer-events: none; /* Just a preview */
+}
+
+.mcta-preview-icon {
+    display: flex;
+    margin-right: 10px;
+}
+
+.mcta-preview-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+}
+
+.mcta-preview-label {
+    line-height: 1;
+}

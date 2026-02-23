@@ -1,0 +1,28 @@
+{
+  "name": "ctaflow/mobile-cta-bar",
+  "description": "Sticky Floating Button for Call, WhatsApp & Booking",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "ctaflow",
+      "email": "support@ctaflow.com"
+    }
+  ],
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.1",
+    "wp-coding-standards/wpcs": "3.2.0",
+    "squizlabs/php_codesniffer": "^3.13",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs",
+    "phpcbf": "phpcbf"
+  }
+}

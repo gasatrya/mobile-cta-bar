@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ruleset name="Mobile CTA Bar Coding Standards">
+    <description>WordPress Coding Standards for Mobile CTA Bar plugin</description>
+
+    <arg value="ps"/>
+    <arg name="colors"/>
+    <arg name="basepath" value="."/>
+    <arg name="parallel" value="20"/>
+    <arg name="extensions" value="php"/>
+    <arg name="cache" value=".phpcs-cache"/>
+
+    <file>.</file>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/.git/*</exclude-pattern>
+
+    <rule ref="WordPress">
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+    </rule>
+
+    <rule ref="PHPCompatibilityWP"/>
+
+    <config name="minimum_supported_wp_version" value="5.9"/>
+    <config name="testVersion" value="7.4-"/>
+
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array">
+                <element value="mobile-cta-bar"/>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <properties>
+            <property name="prefixes" type="array">
+                <element value="mcta"/>
+                <element value="mobile_cta_bar"/>
+                <element value="MobileCtaBar"/>
+            </property>
+        </properties>
+    </rule>
+
+</ruleset>

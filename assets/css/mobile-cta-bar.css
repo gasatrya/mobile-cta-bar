@@ -1,0 +1,101 @@
+/**
+ * Mobile CTA Bar Core Styles
+ */
+
+/* Hidden on desktop by default */
+.mcta-bar {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    z-index: 9999;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* Mobile Only Visibility */
+@media (max-width: 767px) {
+    .mcta-bar {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(40px) scale(0.95);
+        transition: 
+            transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+            opacity 0.8s ease,
+            visibility 0.8s;
+    }
+
+    .mcta-bar.is-visible {
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+.mcta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+/* Sizes */
+.mcta-size-small .mcta-button {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.mcta-size-small .mcta-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.mcta-size-medium .mcta-button {
+    min-height: 52px;
+    padding: 0 24px;
+    font-size: 16px;
+}
+
+.mcta-size-large .mcta-button {
+    min-height: 64px;
+    padding: 0 32px;
+    font-size: 18px;
+}
+
+.mcta-size-large .mcta-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.mcta-button:active {
+    transform: scale(0.95);
+}
+
+.mcta-icon {
+    display: flex;
+    margin-right: 10px;
+}
+
+.mcta-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+}
+
+.mcta-label {
+    font-size: 16px;
+    line-height: 1;
+}
