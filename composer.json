@@ -20,7 +20,27 @@
       "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
+  "archive": {
+    "exclude": [
+      ".git/",
+      ".gitignore",
+      ".distignore",
+      ".wordpress-org/",
+      "composer.json",
+      "composer.lock",
+      "phpcs.xml.dist",
+      ".phpcs-cache",
+      "vendor/",
+      "node_modules/",
+      "package.json",
+      "package-lock.json",
+      "README.md",
+      "AGENTS.md",
+      "GEMINI.md"
+    ]
+  },
   "scripts": {
+    "zip": "composer archive --format=zip --file mobile-cta-bar",
     "phpcs": "phpcs",
     "phpcbf": "phpcbf"
   }
