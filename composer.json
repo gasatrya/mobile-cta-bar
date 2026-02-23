@@ -40,7 +40,7 @@
     ]
   },
   "scripts": {
-    "zip": "rm -f mobile-cta-bar.zip && composer archive --format=zip --file=mobile-cta-bar-tmp && mkdir -p mobile-cta-bar && unzip -q mobile-cta-bar-tmp.zip -d mobile-cta-bar && zip -q -r mobile-cta-bar.zip mobile-cta-bar && rm -rf mobile-cta-bar mobile-cta-bar-tmp.zip",
+    "zip": "git archive --prefix=mobile-cta-bar/ -o mobile-cta-bar.zip HEAD",
     "phpcs": "phpcs",
     "phpcbf": "phpcbf"
   }
