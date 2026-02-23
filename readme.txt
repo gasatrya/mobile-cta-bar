@@ -92,9 +92,8 @@ No. The CSS and JS files combined weigh less than 5kb and are only loaded on the
 
 == Screenshots ==
 
-1. The settings page with Live Preview and sidebar audit CTA.
+1. The settings page with Live Preview.
 2. The floating CTA button as seen by a mobile visitor.
-3. WhatsApp action in use — opens a chat with a pre-filled message.
 
 == Changelog ==
 
