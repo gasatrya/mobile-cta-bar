@@ -3,7 +3,7 @@ Contributors: gasatrya
 Tags: whatsapp, cta, whatsapp-business, click-to-chat, notification-bar
 Requires at least: 6.5
 Tested up to: 6.9
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -97,12 +97,20 @@ No. The CSS and JS files combined weigh less than 5kb and are only loaded on the
 
 == Changelog ==
 
+= 1.0.1 =
+* Rebranded the plugin to MobiFlow.
+* Minor UI/UX refinements.
+* Code cleanup and consistency improvements.
+
 = 1.0.0 =
 * Initial release.
 * Features: Action types (Phone, URL, WhatsApp, Scroll), Custom Colors, Icons, Button Sizing, and Page Exclusion.
 * Includes: Live Preview and Reset to Defaults functionality.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Rebranded to MobiFlow. No functionality changes.
 
 = 1.0.0 =
 Initial release. No upgrade steps required.

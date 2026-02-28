@@ -11,7 +11,7 @@
  * Plugin Name:       MobiFlow - Sticky Floating Mobile Button for Call, Messaging & Booking
  * Plugin URI:        https://www.ctaflow.com/plugins/mobiflow
  * Description:       Add a permanent floating CTA button to your site on mobile. One tap to call, book, or message. Zero code required.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.5
  * Requires PHP:      8.0
  * Author:            Ga Satrya
