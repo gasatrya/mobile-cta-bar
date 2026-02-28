@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Mobile CTA Bar Coding Standards">
-    <description>WordPress Coding Standards for Mobile CTA Bar plugin</description>
+<ruleset name="MobiFlow Coding Standards">
+    <description>WordPress Coding Standards for MobiFlow plugin</description>
 
     <arg value="ps"/>
     <arg name="colors"/>
@@ -29,7 +29,7 @@
     <rule ref="WordPress.WP.I18n">
         <properties>
             <property name="text_domain" type="array">
-                <element value="mobile-cta-bar"/>
+                <element value="mobiflow"/>
             </property>
         </properties>
     </rule>
@@ -37,9 +37,8 @@
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <properties>
             <property name="prefixes" type="array">
-                <element value="mcta"/>
-                <element value="mobile_cta_bar"/>
-                <element value="MobileCtaBar"/>
+                <element value="mobiflow"/>
+                <element value="MobiFlow"/>
             </property>
         </properties>
     </rule>

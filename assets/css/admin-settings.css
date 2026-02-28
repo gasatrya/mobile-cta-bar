@@ -1,23 +1,23 @@
 /**
  * Admin Settings Layout & Preview
  */
-.mcta-settings-wrapper {
+.mobiflow-settings-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 20px;
 }
 
-.mcta-settings-form {
+.mobiflow-settings-form {
     flex: 1;
     min-width: 300px;
 }
 
-.mcta-settings-preview {
+.mobiflow-settings-preview {
     flex: 0 0 350px;
 }
 
-.mcta-preview-container {
+.mobiflow-preview-container {
     position: sticky;
     top: 50px;
     background: #fff;
@@ -28,14 +28,14 @@
     text-align: center;
 }
 
-.mcta-preview-container h2 {
+.mobiflow-preview-container h2 {
     margin-top: 0;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
     font-size: 14px;
 }
 
-.mcta-preview-window {
+.mobiflow-preview-window {
     background: #f0f0f1;
     border: 1px solid #ddd;
     height: 200px;
@@ -49,7 +49,7 @@
 }
 
 /* Re-use frontend-like styles for the preview button */
-.mcta-preview-button {
+.mobiflow-preview-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,17 +65,17 @@
     pointer-events: none; /* Just a preview */
 }
 
-.mcta-preview-icon {
+.mobiflow-preview-icon {
     display: flex;
     margin-right: 10px;
 }
 
-.mcta-preview-icon svg {
+.mobiflow-preview-icon svg {
     width: 20px;
     height: 20px;
     stroke: currentColor;
 }
 
-.mcta-preview-label {
+.mobiflow-preview-label {
     line-height: 1;
 }

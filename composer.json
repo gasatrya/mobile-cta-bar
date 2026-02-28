@@ -1,5 +1,5 @@
 {
-  "name": "gasatrya/mobile-cta-bar",
+  "name": "gasatrya/mobiflow",
   "description": "Sticky Floating Button for Call, Messaging & Booking",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
@@ -40,9 +40,9 @@
     ]
   },
   "scripts": {
-    "zip": "git archive --prefix=mobile-cta-bar/ -o mobile-cta-bar.zip HEAD",
+    "zip": "git archive --prefix=mobiflow/ -o mobiflow.zip HEAD",
     "phpcs": "phpcs",
     "phpcbf": "phpcbf",
-    "i18n": "wp i18n make-pot . languages/mobile-cta-bar.pot"
+    "i18n": "wp i18n make-pot . languages/mobiflow.pot"
   }
 }

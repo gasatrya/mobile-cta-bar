@@ -2,10 +2,10 @@
 /**
  * Frontend Renderer
  *
- * @package MobileCtaBar
+ * @package MobiFlow
  */
 
-namespace MobileCtaBar\Frontend;
+namespace MobiFlow\Frontend;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -33,36 +33,36 @@ class Renderer {
 		}
 
 		wp_enqueue_style(
-			'mobile-cta-bar',
-			MCTA_PLUGIN_URL . 'assets/css/mobile-cta-bar.css',
+			'mobiflow',
+			MOBIFLOW_PLUGIN_URL . 'assets/css/mobiflow.css',
 			array(),
-			MCTA_VERSION,
+			MOBIFLOW_VERSION,
 		);
 		wp_enqueue_script(
-			'mobile-cta-bar',
-			MCTA_PLUGIN_URL . 'assets/js/mobile-cta-bar.js',
+			'mobiflow',
+			MOBIFLOW_PLUGIN_URL . 'assets/js/mobiflow.js',
 			array(),
-			MCTA_VERSION,
+			MOBIFLOW_VERSION,
 			true,
 		);
 
 		// Dynamic styles.
-		$options      = get_option( 'mobile_cta_bar_options', array() );
+		$options      = get_option( 'mobiflow_options', array() );
 		$button_color = isset( $options['button_color'] ) ? $options['button_color'] : '#C9A96E';
 		$text_color   = isset( $options['text_color'] ) ? $options['text_color'] : '#FFFFFF';
 
 		$custom_css = "
-			.mcta-button { background-color: {$button_color}; color: {$text_color}; }
-			.mcta-icon svg { stroke: {$text_color}; }
-			.mcta-bar { color: {$text_color}; }
+			.mobiflow-button { background-color: {$button_color}; color: {$text_color}; }
+			.mobiflow-icon svg { stroke: {$text_color}; }
+			.mobiflow-bar { color: {$text_color}; }
 		";
-		wp_add_inline_style( 'mobile-cta-bar', $custom_css );
+		wp_add_inline_style( 'mobiflow', $custom_css );
 
 		// Pass delay to JS.
 		$delay = isset( $options['show_delay'] ) ? (int) $options['show_delay'] : 3;
 		wp_localize_script(
-			'mobile-cta-bar',
-			'mctaSettings',
+			'mobiflow',
+			'mobiflowSettings',
 			array(
 				'delay' => $delay * 1000,
 			)
@@ -77,10 +77,10 @@ class Renderer {
 			return;
 		}
 
-		$options = get_option( 'mobile_cta_bar_options', array() );
+		$options = get_option( 'mobiflow_options', array() );
 		$label   = isset( $options['button_label'] )
 		? $options['button_label']
-		: __( 'Book Now', 'mobile-cta-bar' );
+		: __( 'Book Now', 'mobiflow' );
 		$type    = isset( $options['action_type'] ) ? $options['action_type'] : 'url';
 		$value   = isset( $options['action_value'] ) ? $options['action_value'] : '#';
 		$icon    = isset( $options['button_icon'] ) ? $options['button_icon'] : 'none';
@@ -90,17 +90,17 @@ class Renderer {
 		$size = isset( $options['button_size'] ) ? $options['button_size'] : 'medium';
 		// Basic HTML structure.
 		?>
-		<div id="mcta-bar" class="mcta-bar mcta-size-<?php echo esc_attr( $size ); ?>">
-			<a href="<?php echo esc_url( $link ); ?>" class="mcta-button">
+		<div id="mobiflow-bar" class="mobiflow-bar mobiflow-size-<?php echo esc_attr( $size ); ?>">
+			<a href="<?php echo esc_url( $link ); ?>" class="mobiflow-button">
 				<?php if ( $svg ) : ?>
-					<span class="mcta-icon">
+					<span class="mobiflow-icon">
 						<?php
 						// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						echo $svg;
 						?>
 					</span>
 				<?php endif; ?>
-				<span class="mcta-label"><?php echo esc_html( $label ); ?></span>
+				<span class="mobiflow-label"><?php echo esc_html( $label ); ?></span>
 			</a>
 			</div>
 			<?php
@@ -110,7 +110,7 @@ class Renderer {
 		* @return bool
 		*/
 	private function should_render() {
-		$options       = get_option( 'mobile_cta_bar_options', array() );
+		$options       = get_option( 'mobiflow_options', array() );
 		$hide_on_pages = isset( $options['hide_on_pages'] ) ? $options['hide_on_pages'] : '';
 
 		if ( empty( $hide_on_pages ) ) {

@@ -2,40 +2,40 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Mobile CTA Bar – Sticky Floating Button for Call, Messaging & Booking 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mobile-cta-bar\n"
+"Project-Id-Version: MobiFlow - Sticky Floating Mobile Button for Call, Messaging & Booking 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mobiflow\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-24T09:34:29+00:00\n"
+"POT-Creation-Date: 2026-02-28T17:18:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: mobile-cta-bar\n"
+"X-Domain: mobiflow\n"
 
 #. Plugin Name of the plugin
-#: mobile-cta-bar.php
-msgid "Mobile CTA Bar – Sticky Floating Button for Call, Messaging & Booking"
+#: mobiflow.php
+msgid "MobiFlow - Sticky Floating Mobile Button for Call, Messaging & Booking"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: mobile-cta-bar.php
-msgid "https://www.ctaflow.com/plugins/mobile-cta-bar"
+#: mobiflow.php
+msgid "https://www.ctaflow.com/plugins/mobiflow"
 msgstr ""
 
 #. Description of the plugin
-#: mobile-cta-bar.php
+#: mobiflow.php
 msgid "Add a permanent floating CTA button to your site on mobile. One tap to call, book, or message. Zero code required."
 msgstr ""
 
 #. Author of the plugin
-#: mobile-cta-bar.php
+#: mobiflow.php
 msgid "Ga Satrya"
 msgstr ""
 
 #. Author URI of the plugin
-#: mobile-cta-bar.php
+#: mobiflow.php
 msgid "https://www.ctaflow.com/"
 msgstr ""
 
@@ -44,11 +44,11 @@ msgid "Settings have been reset to defaults."
 msgstr ""
 
 #: includes/Admin/Settings.php:105
-msgid "Mobile CTA Bar Settings"
+msgid "MobiFlow Settings"
 msgstr ""
 
 #: includes/Admin/Settings.php:106
-msgid "Mobile CTA Bar"
+msgid "MobiFlow"
 msgstr ""
 
 #: includes/Admin/Settings.php:125

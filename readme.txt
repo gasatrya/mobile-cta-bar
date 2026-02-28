@@ -1,4 +1,4 @@
-=== Mobile CTA Bar – Sticky Floating Button for Call, Messaging & Booking ===
+=== MobiFlow – Sticky Floating Mobile Button for Call, Messaging & Booking ===
 Contributors: gasatrya
 Tags: whatsapp, cta, whatsapp-business, click-to-chat, notification-bar
 Requires at least: 6.5
@@ -14,7 +14,7 @@ Boost conversions with a permanent floating CTA button on mobile. One tap to cal
 
 65–75% of local business website traffic comes from mobile — yet most WordPress themes bury the phone number in the header and hide the "Book Now" button at the top of the page. Once a visitor scrolls, your most important CTA disappears.
 
-**Mobile CTA Bar** fixes this in minutes.
+**MobiFlow** fixes this in minutes.
 
 Install the plugin, set your button label and action, and a beautiful floating button will appear at the bottom of every mobile screen — staying permanently visible as the user scrolls. One tap to call. One tap to book. One tap to start a WhatsApp conversation.
 
@@ -53,13 +53,13 @@ This plugin is built with privacy as a priority. No tracking, no external script
 * Session frequency control — hide for visitors who already clicked
 * Click analytics dashboard — clicks, click rate by page, device breakdown
 
-[Read more detail](https://www.ctaflow.com/plugins/mobile-cta-bar)
+[Read more detail](https://www.ctaflow.com/plugins/mobiflow)
 
 == Installation ==
 
-1. Upload the `mobile-cta-bar` folder to the `/wp-content/plugins/` directory, or install via **Plugins → Add New** in your WordPress dashboard.
+1. Upload the `mobiflow` folder to the `/wp-content/plugins/` directory, or install via **Plugins → Add New** in your WordPress dashboard.
 2. Activate the plugin through the **Plugins** menu.
-3. Go to **Settings → Mobile CTA Bar** to configure your button.
+3. Go to **Settings → MobiFlow** to configure your button.
 4. Set your button label, choose an action type, and enter the action value.
 5. Customize colors, size, and entrance delay to match your brand.
 6. Click **Save Settings** and visit your site on a mobile device to see the button in action.

@@ -1,9 +1,9 @@
 /**
- * Mobile CTA Bar Core Styles
+ * MobiFlow Core Styles
  */
 
 /* Hidden on desktop by default */
-.mcta-bar {
+.mobiflow-bar {
     display: none;
     position: fixed;
     bottom: 30px;
@@ -17,7 +17,7 @@
 
 /* Mobile Only Visibility */
 @media (max-width: 767px) {
-    .mcta-bar {
+    .mobiflow-bar {
         display: block;
         opacity: 0;
         visibility: hidden;
@@ -28,7 +28,7 @@
             visibility 0.8s;
     }
 
-    .mcta-bar.is-visible {
+    .mobiflow-bar.is-visible {
         transform: translateX(-50%) translateY(0) scale(1);
         opacity: 1;
         visibility: visible;
@@ -36,7 +36,7 @@
     }
 }
 
-.mcta-button {
+.mobiflow-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,50 +52,50 @@
 }
 
 /* Sizes */
-.mcta-size-small .mcta-button {
+.mobiflow-size-small .mobiflow-button {
     min-height: 40px;
     padding: 0 16px;
     font-size: 14px;
 }
 
-.mcta-size-small .mcta-icon svg {
+.mobiflow-size-small .mobiflow-icon svg {
     width: 16px;
     height: 16px;
 }
 
-.mcta-size-medium .mcta-button {
+.mobiflow-size-medium .mobiflow-button {
     min-height: 52px;
     padding: 0 24px;
     font-size: 16px;
 }
 
-.mcta-size-large .mcta-button {
+.mobiflow-size-large .mobiflow-button {
     min-height: 64px;
     padding: 0 32px;
     font-size: 18px;
 }
 
-.mcta-size-large .mcta-icon svg {
+.mobiflow-size-large .mobiflow-icon svg {
     width: 24px;
     height: 24px;
 }
 
-.mcta-button:active {
+.mobiflow-button:active {
     transform: scale(0.95);
 }
 
-.mcta-icon {
+.mobiflow-icon {
     display: flex;
     margin-right: 10px;
 }
 
-.mcta-icon svg {
+.mobiflow-icon svg {
     width: 20px;
     height: 20px;
     stroke: currentColor;
 }
 
-.mcta-label {
+.mobiflow-label {
     font-size: 16px;
     line-height: 1;
 }

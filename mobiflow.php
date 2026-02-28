@@ -1,15 +1,15 @@
 <?php
 /**
- * Mobile CTA Bar – Sticky Floating Button for Call, Messaging & Booking
+ * MobiFlow - Sticky Floating Mobile Button for Call, Messaging & Booking
  *
- * @package           MobileCtaBar
+ * @package           MobiFlow
  * @author            Ga Satrya
  * @copyright         2026 Ga Satrya
  * @license           GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       Mobile CTA Bar – Sticky Floating Button for Call, Messaging & Booking
- * Plugin URI:        https://www.ctaflow.com/plugins/mobile-cta-bar
+ * Plugin Name:       MobiFlow - Sticky Floating Mobile Button for Call, Messaging & Booking
+ * Plugin URI:        https://www.ctaflow.com/plugins/mobiflow
  * Description:       Add a permanent floating CTA button to your site on mobile. One tap to call, book, or message. Zero code required.
  * Version:           1.0.0
  * Requires at least: 6.5
@@ -18,7 +18,7 @@
  * Author URI:        https://www.ctaflow.com/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       mobile-cta-bar
+ * Text Domain:       mobiflow
  */
 
 // Exit if accessed directly.
@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 spl_autoload_register(
 	function ( $class_name ) {
-		$prefix   = 'MobileCtaBar\\';
+		$prefix   = 'MobiFlow\\';
 		$base_dir = __DIR__ . '/includes/';
 
 		$len = strlen( $prefix );
@@ -51,8 +51,8 @@ spl_autoload_register(
 /**
  * Initialize the plugin.
  */
-function mobile_cta_bar_init() {
+function mobiflow_init() {
 	// Initialize the main plugin class.
-	\MobileCtaBar\Core::get_instance();
+	\MobiFlow\Core::get_instance();
 }
-add_action( 'plugins_loaded', 'mobile_cta_bar_init' );
+add_action( 'plugins_loaded', 'mobiflow_init' );

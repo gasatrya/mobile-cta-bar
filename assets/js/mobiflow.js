@@ -1,11 +1,11 @@
 /**
- * Mobile CTA Bar Frontend Logic
+ * MobiFlow Frontend Logic
  */
 (function() {
     'use strict';
 
     document.addEventListener('DOMContentLoaded', function() {
-        var bar = document.getElementById('mcta-bar');
+        var bar = document.getElementById('mobiflow-bar');
         if (!bar) return;
 
         // Double check for mobile (already handled by CSS media query)
@@ -15,7 +15,7 @@
 
         if (!isMobile()) return;
 
-        var delay = (typeof mctaSettings !== 'undefined' && mctaSettings.delay) ? mctaSettings.delay : 3000;
+        var delay = (typeof mobiflowSettings !== 'undefined' && mobiflowSettings.delay) ? mobiflowSettings.delay : 3000;
 
         var showTimeout;
         function triggerShow() {

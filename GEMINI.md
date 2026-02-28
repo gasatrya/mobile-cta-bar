@@ -1,7 +1,7 @@
-# Mobile CTA Bar - Project Context
+# MobiFlow - Project Context
 
 ## Project Overview
-**Mobile CTA Bar** is a lightweight, performance-optimized WordPress plugin designed to add a sticky floating "Call to Action" (CTA) button to websites, specifically for mobile devices. It aims to solve "lead leaks" for local businesses (clinics, restaurants, law firms) by ensuring a primary contact action (Call, WhatsApp, Booking URL, or Smooth Scroll) is always within thumb-reach as a user scrolls.
+**MobiFlow** is a lightweight, performance-optimized WordPress plugin designed to add a sticky floating "Call to Action" (CTA) button to websites, specifically for mobile devices. It aims to solve "lead leaks" for local businesses (clinics, restaurants, law firms) by ensuring a primary contact action (Call, WhatsApp, Booking URL, or Smooth Scroll) is always within thumb-reach as a user scrolls.
 
 - **Primary Goal:** Increase mobile conversions by providing a permanent, high-visibility CTA.
 - **Key Features:** Click-to-call, WhatsApp integration with pre-filled messages, smooth scroll to anchor IDs, custom styling (colors, sizes, icons), and page-level exclusion rules.
@@ -35,5 +35,5 @@ composer run phpcbf
 - **WordPress Coding Standards (WPCS):** Strictly followed for PHP (indentation with tabs, spacing, naming).
 - **Security:** All outputs must be escaped (`esc_html`, `esc_attr`, `esc_url`). All inputs must be sanitized (`sanitize_text_field`, `absint`). Use nonces for admin actions.
 - **No jQuery:** JavaScript must remain dependency-free to ensure maximum performance and compatibility.
-- **Namespacing:** All PHP classes are under the `MobileCtaBar` namespace.
+- **Namespacing:** All PHP classes are under the `MobiFlow` namespace.
 - **Autoloading:** Manual PSR-4 implementation in the main plugin file; avoid manual `require_once` for class files.
