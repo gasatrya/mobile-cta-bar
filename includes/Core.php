@@ -2,10 +2,10 @@
 /**
  * Core Plugin Class
  *
- * @package MobiFlow
+ * @package ButtonFlow
  */
 
-namespace MobiFlow;
+namespace ButtonFlow;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -47,9 +47,9 @@ class Core {
 	 * Define plugin constants.
 	 */
 	private function define_constants() {
-		define( 'MOBIFLOW_VERSION', '1.0.0' );
-		define( 'MOBIFLOW_PLUGIN_DIR', plugin_dir_path( __DIR__ ) );
-		define( 'MOBIFLOW_PLUGIN_URL', plugin_dir_url( __DIR__ ) );
+		define( 'BUTTONFLOW_VERSION', '1.0.0' );
+		define( 'BUTTONFLOW_PLUGIN_DIR', plugin_dir_path( __DIR__ ) );
+		define( 'BUTTONFLOW_PLUGIN_URL', plugin_dir_url( __DIR__ ) );
 	}
 
 	/**

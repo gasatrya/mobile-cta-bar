@@ -9,9 +9,9 @@
     const whatsappMessageField = document.getElementById('whatsapp_message');
 
     // Preview elements
-    const previewButton = document.getElementById('mobiflow-preview-button');
-    const previewLabel = previewButton.querySelector('.mobiflow-preview-label');
-    const previewIcon = previewButton.querySelector('.mobiflow-preview-icon');
+    const previewButton = document.getElementById('buttonflow-preview-button');
+    const previewLabel = previewButton.querySelector('.buttonflow-preview-label');
+    const previewIcon = previewButton.querySelector('.buttonflow-preview-icon');
 
     // Input elements for preview
     const labelInput = document.getElementById('button_label');

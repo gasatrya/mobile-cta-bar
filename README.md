@@ -1,10 +1,10 @@
-# MobiFlow — Sticky Floating Mobile Button for Call, Messaging & Booking
+# ButtonFlow — Sticky Floating Mobile Button for Call, Messaging & Booking
 
 [![WordPress Requirements](https://img.shields.io/badge/WordPress-6.9.1%2B-0073AA.svg?style=flat-square&logo=wordpress)](https://wordpress.org/download/)
 [![PHP Requirements](https://img.shields.io/badge/PHP-8.0%2B-777BB4.svg?style=flat-square&logo=php)](https://www.php.net/downloads)
 [![License](https://img.shields.io/badge/License-GPL--2.0--or--later-brightgreen.svg?style=flat-square)](LICENSE)
 
-**MobiFlow** is a lightweight, performance-optimized WordPress plugin designed to add a sticky floating "Call to Action" (CTA) button to websites, specifically for mobile devices. It aims to solve "lead leaks" for local businesses by ensuring a primary contact action (Call, WhatsApp, Booking URL, or Smooth Scroll) is always within thumb-reach as a user scrolls.
+**ButtonFlow** is a lightweight, performance-optimized WordPress plugin designed to add a sticky floating "Call to Action" (CTA) button to websites, specifically for mobile devices. It aims to solve "lead leaks" for local businesses by ensuring a primary contact action (Call, WhatsApp, Booking URL, or Smooth Scroll) is always within thumb-reach as a user scrolls.
 
 ## 🚀 Key Features
 
@@ -29,14 +29,14 @@
 
 The project follows a modular, object-oriented approach for clean separation of concerns.
 
-- `mobiflow.php` — Main plugin entry point and manual PSR-4 autoloader.
+- `buttonflow.php` — Main plugin entry point and manual PSR-4 autoloader.
 - `includes/` — Core logic and classes.
     - `Core.php` — Singleton coordinator that initializes Admin and Frontend components.
     - `Admin/Settings.php` — Handles the WordPress Settings API, sanitization, and the admin UI.
     - `Frontend/Renderer.php` — Manages frontend HTML injection and dynamic asset enqueuing.
 - `assets/` — Frontend and Admin assets.
-    - `css/` — `mobiflow.css` (Floating button) and `admin-settings.css`.
-    - `js/` — `mobiflow.js` (Visibility logic) and `admin-settings.js` (Live preview).
+    - `css/` — `buttonflow.css` (Floating button) and `admin-settings.css`.
+    - `js/` — `buttonflow.js` (Visibility logic) and `admin-settings.js` (Live preview).
 - `languages/` — Translation files (.pot).
 
 ## 💻 Development Setup
@@ -46,7 +46,7 @@ Requires a local WordPress installation (e.g., LocalWP, DevKinsta).
 
 ```bash
 # Clone the repository
-git clone https://github.com/gasatrya/mobiflow.git
+git clone https://github.com/gasatrya/buttonflow.git
 
 # Install development dependencies (PHPCS / WordPress Coding Standards)
 composer install

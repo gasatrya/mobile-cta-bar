@@ -1,11 +1,11 @@
 /**
- * MobiFlow Frontend Logic
+ * ButtonFlow Frontend Logic
  */
 (function() {
     'use strict';
 
     document.addEventListener('DOMContentLoaded', function() {
-        var bar = document.getElementById('mobiflow-bar');
+        var bar = document.getElementById('buttonflow-bar');
         if (!bar) return;
 
         // Double check for mobile (already handled by CSS media query)
@@ -15,7 +15,7 @@
 
         if (!isMobile()) return;
 
-        var delay = (typeof mobiflowSettings !== 'undefined' && mobiflowSettings.delay) ? mobiflowSettings.delay : 3000;
+        var delay = (typeof buttonflowSettings !== 'undefined' && buttonflowSettings.delay) ? buttonflowSettings.delay : 3000;
 
         var showTimeout;
         function triggerShow() {

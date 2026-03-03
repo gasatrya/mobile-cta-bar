@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="MobiFlow Coding Standards">
-    <description>WordPress Coding Standards for MobiFlow plugin</description>
+<ruleset name="ButtonFlow Coding Standards">
+    <description>WordPress Coding Standards for ButtonFlow plugin</description>
 
     <arg value="ps"/>
     <arg name="colors"/>
@@ -29,7 +29,7 @@
     <rule ref="WordPress.WP.I18n">
         <properties>
             <property name="text_domain" type="array">
-                <element value="mobiflow"/>
+                <element value="buttonflow"/>
             </property>
         </properties>
     </rule>
@@ -37,8 +37,8 @@
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <properties>
             <property name="prefixes" type="array">
-                <element value="mobiflow"/>
-                <element value="MobiFlow"/>
+                <element value="buttonflow"/>
+                <element value="ButtonFlow"/>
             </property>
         </properties>
     </rule>

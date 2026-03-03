@@ -1,9 +1,9 @@
 /**
- * MobiFlow Core Styles
+ * ButtonFlow Core Styles
  */
 
 /* Hidden on desktop by default */
-.mobiflow-bar {
+.buttonflow-bar {
     display: none;
     position: fixed;
     bottom: 30px;
@@ -17,7 +17,7 @@
 
 /* Mobile Only Visibility */
 @media (max-width: 767px) {
-    .mobiflow-bar {
+    .buttonflow-bar {
         display: block;
         opacity: 0;
         visibility: hidden;
@@ -28,7 +28,7 @@
             visibility 0.8s;
     }
 
-    .mobiflow-bar.is-visible {
+    .buttonflow-bar.is-visible {
         transform: translateX(-50%) translateY(0) scale(1);
         opacity: 1;
         visibility: visible;
@@ -36,7 +36,7 @@
     }
 }
 
-.mobiflow-button {
+.buttonflow-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,50 +52,50 @@
 }
 
 /* Sizes */
-.mobiflow-size-small .mobiflow-button {
+.buttonflow-size-small .buttonflow-button {
     min-height: 40px;
     padding: 0 16px;
     font-size: 14px;
 }
 
-.mobiflow-size-small .mobiflow-icon svg {
+.buttonflow-size-small .buttonflow-icon svg {
     width: 16px;
     height: 16px;
 }
 
-.mobiflow-size-medium .mobiflow-button {
+.buttonflow-size-medium .buttonflow-button {
     min-height: 52px;
     padding: 0 24px;
     font-size: 16px;
 }
 
-.mobiflow-size-large .mobiflow-button {
+.buttonflow-size-large .buttonflow-button {
     min-height: 64px;
     padding: 0 32px;
     font-size: 18px;
 }
 
-.mobiflow-size-large .mobiflow-icon svg {
+.buttonflow-size-large .buttonflow-icon svg {
     width: 24px;
     height: 24px;
 }
 
-.mobiflow-button:active {
+.buttonflow-button:active {
     transform: scale(0.95);
 }
 
-.mobiflow-icon {
+.buttonflow-icon {
     display: flex;
     margin-right: 10px;
 }
 
-.mobiflow-icon svg {
+.buttonflow-icon svg {
     width: 20px;
     height: 20px;
     stroke: currentColor;
 }
 
-.mobiflow-label {
+.buttonflow-label {
     font-size: 16px;
     line-height: 1;
 }

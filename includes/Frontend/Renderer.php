@@ -2,10 +2,10 @@
 /**
  * Frontend Renderer
  *
- * @package MobiFlow
+ * @package ButtonFlow
  */
 
-namespace MobiFlow\Frontend;
+namespace ButtonFlow\Frontend;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -33,36 +33,36 @@ class Renderer {
 		}
 
 		wp_enqueue_style(
-			'mobiflow',
-			MOBIFLOW_PLUGIN_URL . 'assets/css/mobiflow.css',
+			'buttonflow',
+			BUTTONFLOW_PLUGIN_URL . 'assets/css/buttonflow.css',
 			array(),
-			MOBIFLOW_VERSION,
+			BUTTONFLOW_VERSION,
 		);
 		wp_enqueue_script(
-			'mobiflow',
-			MOBIFLOW_PLUGIN_URL . 'assets/js/mobiflow.js',
+			'buttonflow',
+			BUTTONFLOW_PLUGIN_URL . 'assets/js/buttonflow.js',
 			array(),
-			MOBIFLOW_VERSION,
+			BUTTONFLOW_VERSION,
 			true,
 		);
 
 		// Dynamic styles.
-		$options      = get_option( 'mobiflow_options', array() );
+		$options      = get_option( 'buttonflow_options', array() );
 		$button_color = isset( $options['button_color'] ) ? $options['button_color'] : '#C9A96E';
 		$text_color   = isset( $options['text_color'] ) ? $options['text_color'] : '#FFFFFF';
 
 		$custom_css = "
-			.mobiflow-button { background-color: {$button_color}; color: {$text_color}; }
-			.mobiflow-icon svg { stroke: {$text_color}; }
-			.mobiflow-bar { color: {$text_color}; }
+			.buttonflow-button { background-color: {$button_color}; color: {$text_color}; }
+			.buttonflow-icon svg { stroke: {$text_color}; }
+			.buttonflow-bar { color: {$text_color}; }
 		";
-		wp_add_inline_style( 'mobiflow', $custom_css );
+		wp_add_inline_style( 'buttonflow', $custom_css );
 
 		// Pass delay to JS.
 		$delay = isset( $options['show_delay'] ) ? (int) $options['show_delay'] : 3;
 		wp_localize_script(
-			'mobiflow',
-			'mobiflowSettings',
+			'buttonflow',
+			'buttonflowSettings',
 			array(
 				'delay' => $delay * 1000,
 			)
@@ -77,10 +77,10 @@ class Renderer {
 			return;
 		}
 
-		$options = get_option( 'mobiflow_options', array() );
+		$options = get_option( 'buttonflow_options', array() );
 		$label   = isset( $options['button_label'] )
 		? $options['button_label']
-		: __( 'Book Now', 'mobiflow' );
+		: __( 'Book Now', 'buttonflow' );
 		$type    = isset( $options['action_type'] ) ? $options['action_type'] : 'url';
 		$value   = isset( $options['action_value'] ) ? $options['action_value'] : '#';
 		$icon    = isset( $options['button_icon'] ) ? $options['button_icon'] : 'none';
@@ -90,17 +90,17 @@ class Renderer {
 		$size = isset( $options['button_size'] ) ? $options['button_size'] : 'medium';
 		// Basic HTML structure.
 		?>
-		<div id="mobiflow-bar" class="mobiflow-bar mobiflow-size-<?php echo esc_attr( $size ); ?>">
-			<a href="<?php echo esc_url( $link ); ?>" class="mobiflow-button">
+		<div id="buttonflow-bar" class="buttonflow-bar buttonflow-size-<?php echo esc_attr( $size ); ?>">
+			<a href="<?php echo esc_url( $link ); ?>" class="buttonflow-button">
 				<?php if ( $svg ) : ?>
-					<span class="mobiflow-icon">
+					<span class="buttonflow-icon">
 						<?php
 						// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						echo $svg;
 						?>
 					</span>
 				<?php endif; ?>
-				<span class="mobiflow-label"><?php echo esc_html( $label ); ?></span>
+				<span class="buttonflow-label"><?php echo esc_html( $label ); ?></span>
 			</a>
 			</div>
 			<?php
@@ -110,7 +110,7 @@ class Renderer {
 		* @return bool
 		*/
 	private function should_render() {
-		$options       = get_option( 'mobiflow_options', array() );
+		$options       = get_option( 'buttonflow_options', array() );
 		$hide_on_pages = isset( $options['hide_on_pages'] ) ? $options['hide_on_pages'] : '';
 
 		if ( empty( $hide_on_pages ) ) {

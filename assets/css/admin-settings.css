@@ -1,23 +1,23 @@
 /**
  * Admin Settings Layout & Preview
  */
-.mobiflow-settings-wrapper {
+.buttonflow-settings-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 20px;
 }
 
-.mobiflow-settings-form {
+.buttonflow-settings-form {
     flex: 1;
     min-width: 300px;
 }
 
-.mobiflow-settings-preview {
+.buttonflow-settings-preview {
     flex: 0 0 350px;
 }
 
-.mobiflow-preview-container {
+.buttonflow-preview-container {
     position: sticky;
     top: 50px;
     background: #fff;
@@ -28,14 +28,14 @@
     text-align: center;
 }
 
-.mobiflow-preview-container h2 {
+.buttonflow-preview-container h2 {
     margin-top: 0;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
     font-size: 14px;
 }
 
-.mobiflow-preview-window {
+.buttonflow-preview-window {
     background: #f0f0f1;
     border: 1px solid #ddd;
     height: 200px;
@@ -49,7 +49,7 @@
 }
 
 /* Re-use frontend-like styles for the preview button */
-.mobiflow-preview-button {
+.buttonflow-preview-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,17 +65,17 @@
     pointer-events: none; /* Just a preview */
 }
 
-.mobiflow-preview-icon {
+.buttonflow-preview-icon {
     display: flex;
     margin-right: 10px;
 }
 
-.mobiflow-preview-icon svg {
+.buttonflow-preview-icon svg {
     width: 20px;
     height: 20px;
     stroke: currentColor;
 }
 
-.mobiflow-preview-label {
+.buttonflow-preview-label {
     line-height: 1;
 }
